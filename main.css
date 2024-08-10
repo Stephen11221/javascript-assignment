@@ -228,7 +228,7 @@ main .greeting-section .right-side .local-time .time-holder .time-number {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 15px;
   line-height: 39px;
 }
 main .greeting-section .right-side .local-time .time-divider {
