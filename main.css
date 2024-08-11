@@ -121,6 +121,26 @@ header nav .wrapper {
 header nav .wrapper.nav-open {
   right: 0;
 }
+/*offcanvas menu*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  float: left;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+
+
+
 header nav .wrapper ul li + li {
   margin-top: 60px;
 }

@@ -37,7 +37,7 @@
           <a href="/">Javascript Flash Course</a>
         </div>
 
-        <button id="open-nav-menu">
+        <button  class=""  onclick="openNav()">
           <svg
             width="24"
             height="24"
@@ -66,10 +66,10 @@
           </svg>
         </button>
 
-        <div class="wrapper">
+        <div class="wrapper sidenav " id="mySidenav">
           <ul>
             <li>
-              <button id="close-nav-menu">
+              <button id="close-nav-menu" onclick="closeNav()"> 
                 <svg
                   width="47"
                   height="47"
@@ -88,9 +88,9 @@
                     stroke-width="6"
                   />
                 </svg>
-              </button>
+              </button> 
             </li>
-            
+          <div class="open-nav">   
             <li><a href="#home">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#products">Products</a></li>
@@ -125,6 +125,7 @@
                 </a>
               </div>
             </li>
+          </div>
           </ul>
         </div>
       </nav>
@@ -133,7 +134,7 @@
     <main>
       <section id="home" class="container greeting-section">
         <div class="left-side">
-          <h1 id="greeting">Good Afternoon!</h1>
+          <h1 id="greeting"></h1>
           <p id="weather">Retrieving weather information...</p>
           <div class="weather-group">
             <input
@@ -163,7 +164,7 @@
         <img src="" alt="" />
 
         <div class="thumbnails">
-          
+          <img src="assets/gallery/image1.jpg" alt="">
         </div>
       </section>
 
@@ -220,7 +221,7 @@
         </details>
 
         <details>
-          <summary>FAQ 3</summary>
+         <summary>FAQ 3</summary>
 
           <p>
             Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt

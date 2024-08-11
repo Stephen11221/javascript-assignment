@@ -1,3 +1,27 @@
+const time = new Date().getHours();
+
+let greeting ;
+if (time <10 ) {
+  greeting="Good morning"; 
+} else if (time <20) {
+  greeting="Good Dy";
+  
+} else{
+  greeting="Good evening";
+
+}
+document .getElementById("greeting").innerHTMLTML =greeting;
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "900px";
+    document.getElementById("main").style.marginRight = "0px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+  }
+
 function showTime(){
     var date = new Date();
     var h = date.getHours(); // 0 - 23
