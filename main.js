@@ -1,25 +1,25 @@
-const time = new Date().getHours();
+var myDate = new Date();
+var hrs = myDate.getHours();
 
-let greeting ;
-if (time <10 ) {
-  greeting="Good morning"; 
-} else if (time <20) {
-  greeting="Good Dy";
-  
-} else{
-  greeting="Good evening";
+var greet;
 
-}
-document .getElementById("greeting").innerHTMLTML =greeting;
+if (hrs < 12)
+  greet = 'Good Morning';
+else if (hrs >= 12 && hrs <= 17)
+  greet = 'Good Afternoon';
+else if (hrs >= 17 && hrs <= 24)
+  greet = 'Good Evening';
+
+document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>';
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "900px";
-    document.getElementById("main").style.marginRight = "0px";
+    document.getElementById("main").style.marginLeft = "0px";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
+    document.getElementById("main").style.marginLeft= "0";
   }
 
 function showTime(){
@@ -53,4 +53,29 @@ function showTime(){
 
 showTime();
 
-     
+// Slides
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function current(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("ash");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

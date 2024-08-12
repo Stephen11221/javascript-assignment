@@ -129,12 +129,12 @@
           </ul>
         </div>
       </nav>
-    </header>
+      </header>
 
     <main>
       <section id="home" class="container greeting-section">
         <div class="left-side">
-          <h1 id="greeting"></h1>
+          <h1 id="greetings"></h1>
           <p id="weather">Retrieving weather information...</p>
           <div class="weather-group">
             <input
@@ -159,15 +159,41 @@
           </div>
         </div>
       </section>
-
       <section id="gallery" class="gallery-section">
-        <img src="" alt="" />
+        <div class="container">
+          <div class="mySlides">
+              <img  src="assets/gallery/image1.jpg" >
+          </div>
+          <div class="mySlides">
+              <img src="assets/gallery/image2.jpg" >
+          </div>
+          <div class="mySlides">
+              <img src="assets/gallery/image3.jpg" >
+          </div>
+  
+          <div class="caption-container">
+              <p id="caption"></p>
+          </div>
+  
+          <div class="row">
+              <div class="column">
+                  <img class="ash cursor" src="./assets/gallery/image1.jpg" style="width:100%" onclick="current(1)" alt="">
+              </div>
+              <div class="column">
+                  <img class="ash cursor" src="./assets/gallery/image2.jpg" style="width:100%" onclick="current(2)" alt="">
+              </div>
+              <div class="column">
+  
+                  <img class="ash cursor" src="./assets/gallery/image3.jpg" style="width:100%" onclick="current(3)" alt="">
+              </div>
+          </div>
+      </div>
+  
 
         <div class="thumbnails">
-          <img src="assets/gallery/image1.jpg" alt="">
+          
         </div>
       </section>
-
       <section id="products" class="container products-section">
         <div class="products-filter">
           <input type="radio" checked="true" id="all" name="products" />
@@ -239,3 +265,4 @@
 
   </body>
 </html>
+\
